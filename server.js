@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.get('/', (req, res) => {
   res.json({
     message: 'Hello from AWS CI/CD Pipeline!',
-    version: '2.0.0',
+    version: '2.0.1',
     timestamp: new Date().toISOString(),
   });
 });
