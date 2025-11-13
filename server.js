@@ -16,6 +16,10 @@ app.get('/health', (req, res) => {
   res.json({ status: 'healthy' });
 });
 
+app.get('/test', (req, res) => {
+  res.json({ message: 'test' });
+});
+
 const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
