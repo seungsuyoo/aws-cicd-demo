@@ -16,6 +16,8 @@ if ! command -v pm2 &> /dev/null; then
 fi
 
 # PM2로 애플리케이션 시작
+pm2 stop myapp || true
+pm2 delete myapp || true
 pm2 start server.js --name "myapp"
 
 echo "Application started"
